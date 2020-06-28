@@ -9,10 +9,10 @@
 Всегда используйте (если это возможно) протокол HTTPS для подключения изображений и других медиа файлов, файлов таблиц стилей и скриптов.
 
 ```html
-<!-- Плохо http протокол -->
+<!-- Плохо (http протокол) -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-<!-- Плохо пропускать протокол -->
+<!-- Плохо (протокол пропущен) -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
@@ -36,7 +36,6 @@
 <!-- Хорошо -->
 <ul>
   <li>Item</li>
-</li>
 </ul>
 ```
 
