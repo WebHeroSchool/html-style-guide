@@ -9,14 +9,14 @@
 Всегда используйте (если это возможно) протокол HTTPS для подключения изображений и других медиа файлов, файлов таблиц стилей и скриптов.
 
 ```html
-<!-- Not recommended http протокол -->
+<!-- Плохо http протокол -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-<!-- Not recommended пропускать протокол -->
+<!-- Плохо пропускать протокол -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
-<!-- Recommened -->
+<!-- Хорошо -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 ```
 
@@ -28,12 +28,12 @@
 Не используйте для отступов символы табуляции и пробелы смешенные с символами табуляции.
 
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <ul>
 	<li>Item</li>
 </ul>
 
-<!-- Recommened -->
+<!-- Хорошо -->
 <ul>
   <li>Item</li>
 </li>
@@ -47,10 +47,10 @@
 Весь HTML код должен быть в нижнем регистре. Данное правило относиться к именам элементов HTML, их атрибутам, значениям атрибутов (кроеме text/[CDATA](https://ru.wikipedia.org/wiki/CDATA)), селекторам, параметрам, и значениям параметров
 
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <A HREF="/">Home</A>
 
-<!-- Recommened -->
+<!-- Хорошо -->
 <img src="web-hero-school.jpg" alt="Web Hero School" />
 ```
 
@@ -59,10 +59,10 @@
 Пробелы в конце строки не нужны и они могут усложнять понимание различия между разными версиями кода
 
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 Чаво?_
 
-<!-- Recommened -->
+<!-- Хорошо -->
 Ничаво!
 ```
 
@@ -117,16 +117,16 @@
 
 HTML5 (синтаксис HTML) предпочитается для всех HTML документов: *<!DOCTYPE html>*
 
-Рекомендуется использовать HTML как *text/html*. Не используйте XHTML, как *application/xhtml+xml*, так как у браузеров нет полной поддержки таких форматов и оптимизации под тип HTML.
+Хорошо использовать HTML как *text/html*. Не используйте XHTML, как *application/xhtml+xml*, так как у браузеров нет полной поддержки таких форматов и оптимизации под тип HTML.
 
 #### 2.1.2 Одиночные теги
 
 Закрывайте слешем одиночные теги
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <br>
 
-<!-- Recommened -->
+<!-- Хорошо -->
 <br />
 ```
 
@@ -140,11 +140,11 @@ HTML5 (синтаксис HTML) предпочитается для всех HTM
 Для проверки HTML-кода используйте валидатор [HTMLHint](https://htmlhint.com/).
 
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <title>Test</title>
 <article>This is only a test.
 
-<!-- Recommened -->
+<!-- Хорошо -->
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Test</title>
@@ -158,10 +158,10 @@ HTML5 (синтаксис HTML) предпочитается для всех HTM
 
 Использование семантического кода важно для его повторного использования.
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <div onclick="goToRecommendations();">All recommendations</div>
 
-<!-- Recommened -->
+<!-- Хорошо -->
 <a href="recommendations/">All recommendations</a>
 ```
 
@@ -177,10 +177,10 @@ HTML5 (синтаксис HTML) предпочитается для всех HTM
 Для изображений, которые несут декоративный характер не используйте атрибут **alt**.
  
  ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <img src="spreadsheet.png">
 
-<!-- Recommened -->
+<!-- Хорошо -->
 <img src="spreadsheet.png" alt="Spreadsheet screenshot.">
 ```
 
@@ -195,7 +195,7 @@ HTML5 (синтаксис HTML) предпочитается для всех HTM
 Разделение структуры от стилизации важно по причинам обслуживания кода. Менять HTML документы и шаблоны всегда сложнее, чем обновлять таблицы стилей и скрипты.
 
  ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <!DOCTYPE html>
 <title>HTML sucks</title>
 
@@ -214,22 +214,22 @@ HTML5 (синтаксис HTML) предпочитается для всех HTM
   my website without doing everything all over again!
   </center>
 
-<!-- Recommened -->
+<!-- Хорошо -->
 <!DOCTYPE html>
-  <title>My first CSS-only redesign</title>
-  <link rel="stylesheet" href="default.css">
+<title>My first CSS-only redesign</title>
+<link rel="stylesheet" href="default.css">
 
-  <h1>My first CSS-only redesign</h1>
+<h1>My first CSS-only redesign</h1>
 
-  <p>
-    I’ve read about this on a few sites but today I’m actually
-    doing it: separating concerns and avoiding anything in the HTML of
-    my website that is presentational.
-  </p>
+<p>
+  I’ve read about this on a few sites but today I’m actually
+  doing it: separating concerns and avoiding anything in the HTML of
+  my website that is presentational.
+</p>
 
-  <p>
-    It’s awesome!
-  </p>
+<p>
+  It’s awesome!
+</p>
 ```
 
 #### Ссылки на символы
@@ -241,10 +241,10 @@ HTML5 (синтаксис HTML) предпочитается для всех HTM
 Исключением может составлять символы используемые для HTML разметки (например **<** **&**), которые могут стать невидимыми во время использования.
 
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 The currency symbol for the Euro is &ldquo;&eur;&rdquo;.
 
-<!-- Recommened -->
+<!-- Хорошо -->
 The currency symbol for the Euro is “€”.
 ```
 
@@ -257,7 +257,7 @@ The currency symbol for the Euro is “€”.
 Данный подход необходимо вынести в отдельную статью, поскольку он значительно отличается от того, чему обычно обучают веб-разработчиков.
 
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -268,7 +268,7 @@ The currency symbol for the Euro is “€”.
   </body>
 </html>
 
-<!-- Recommended -->
+<!-- Хорошо -->
 <!DOCTYPE html>
 <title>Saving money, saving bytes</title>
 <p>Qed.</p>
@@ -283,17 +283,18 @@ The currency symbol for the Euro is “€”.
 Указание атрибута **type** необязательно так как спецификация HTML 5 подразумевает text/css для стилей и text/javascript для скриптов по-умолчанию. Это можно сделать безопасно даже для старых браузеров
 
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <link rel="stylesheet" href="https://www.google.com/css/maia.css"
   type="text/css">
 
-<!-- Recommended -->
+<!-- Хорошо -->
 <link rel="stylesheet" href="https://www.google.com/css/maia.css">
 
-<!-- Not recommended -->
+<!-- Плохо -->
 <script src="https://www.google.com/js/gweb/analytics/autotrack.js"
   type="text/javascript"></script>
 
+<!-- Хорошо -->
 <script src="https://www.google.com/js/gweb/analytics/autotrack.js"></script>
 ```
 
@@ -304,30 +305,29 @@ The currency symbol for the Euro is “€”.
 Подключаемые файлы внутри элемента head, будут загружены впервую очередь, что обеспечивает большую уверенность в том, что верстка не сламается во время прогрузки контента.
 
 ```html
+<!-- Хорошо -->
 <html>
-<!-- Recommended -->
 <head>
   <link rel="stylesheet" href="https://www.google.com/css/maia.css">
 </head>
 <body>
-Some content
+  <p>Some content</p>
 </body>
 </html>
-<!-- Not recommended -->
+
+<!-- Плохо -->
 <html>
-<!-- Recommended -->
-<head>
-</head>
+<head></head>
 <body>
-<link rel="stylesheet" href="https://www.google.com/css/maia.css">
-Some content
+  <link rel="stylesheet" href="https://www.google.com/css/maia.css">
+  <p>Some content</p>
 </body>
 </html>
 ```
 
 #### 2.1.10 Подключение скриптов
 Скрипты должны подключаться в самом низу страницы, чтобы при её загрузке не блокировать отображение содержимого.
-<!-- Recommended -->
+<!-- Хорошо -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>…</head>
@@ -336,7 +336,7 @@ Some content
   </body>
 </html>
 
-<!-- Not Recommended -->
+<!-- Плохо -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -351,7 +351,7 @@ Some content
 Остальные атрибуты могут быть расставлены в любом порядке, но тоже единообразно для одинаковых элементов.
 
 ```html
-<!-- Recommended -->
+<!-- Хорошо -->
 <a class="element element-big" id="element" href="/" data-name="element">Ссылка</a>
 
 <input class="form-control" type="text" name="test">
@@ -415,22 +415,22 @@ Some content
 Всегда определяйте ширину и высоту изображений. Это уменьшает "мерцание" верстки во время загразуки, т.к. браузер резервирует пространство для изображений во время зазгурзки.
 
 ```html
-<!-- Good -->
+<!-- Хорошо -->
 <img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
 ````
 
 ```html
-<!-- Bad -->
+<!-- Плохо -->
 <img src="html5.gif">
 ```
 
 #### 2.1.16 Елемент title
 
-Элемент <title> является обязательным в HTML.
+Элемент \<title\> является обязательным в HTML.
 
 Содержание заголовка страницы очень важно для поисковой оптимизации (SEO)! Заголовок страницы используется алгоритмами поисковой системы для определения порядка при отображении страниц в результатах поиска.
 
-Элемент <title>:
+Элемент \<title\>:
 - определяет заголовок на панели инструментов браузера
 - предоставляет заголовок для страницы, когда она добавляется в избранное
 - отображает заголовок страницы в результатах поиска
@@ -456,9 +456,11 @@ Viewport - это видимая область на веб-странице и 
 initial-scale = 1.0 устанавливает начальный уровень масштабирования при первой загрузке страницы браузером
 
 Без метатега viewport
+
 ![Без метатега viewport](https://www.w3schools.com/css/img_viewport1.png)
 
 С метатегом viewport
+
 ![С метатегом viewport](https://www.w3schools.com/css/img_viewport2.png)
 
 #### 2.1.16 Доступ JavaScript к HTML элементам
@@ -553,12 +555,12 @@ getElementById("demo").innerHTML = "Hello";
 Всегда выделяйте в ковычки значение атрибутов
 
 ```html
-<!-- Good -->
+<!-- Хорошо -->
 <table class="striped">
 ```
 
 ```html
-<!-- Bad -->
+<!-- Плохо -->
 <table class=table striped>
 ```
 
@@ -566,12 +568,12 @@ getElementById("demo").innerHTML = "Hello";
 Значения атрибутов выделяйте в двойные ковычки (""), а не одинарные ('').
 
 ```html
-<!-- Not recommended -->
+<!-- Плохо -->
 <a class='maia-button maia-button-secondary'>Sign in</a>
 ```
 
 ```html
-<!-- Recommended -->
+<!-- Хорошо -->
 <a class="maia-button maia-button-secondary">Sign in</a>
 ```
 
@@ -580,12 +582,12 @@ getElementById("demo").innerHTML = "Hello";
 Интерпретаторы HTML разметки допускают пробелы вокруг равенства. Но без этих пробелов код легче читается.
 
 ```html
-<!-- Good -->
+<!-- Хорошо -->
 <link rel="stylesheet" href="styles.css">
 ```
 
 ```html
-<!-- Bad -->
+<!-- Плохо -->
 <link rel = "stylesheet" href = "styles.css">
 ```
 
@@ -596,7 +598,7 @@ getElementById("demo").innerHTML = "Hello";
 Для удобства чтения добавьте пустые строки для разделения больших или логических блоков кода.
 
 ```html
-<!-- Good -->
+<!-- Хорошо -->
 <body>
 
 <h1>Famous Cities</h1>
@@ -611,7 +613,7 @@ and the home of the Japanese Imperial Family.</p>
 ```
 
 ```html
-<!-- Bad -->
+<!-- Плохо -->
 <body>
 
   <h1>Famous Cities</h1>
@@ -629,7 +631,7 @@ and the home of the Japanese Imperial Family.</p>
 ```
 
 ```html
-<!-- Good table example -->
+<!-- Хорошо пример таблицы -->
 <table>
   <tr>
     <th>Name</th>
@@ -647,7 +649,7 @@ and the home of the Japanese Imperial Family.</p>
 ```
 
 ```html
-<!-- Good list example -->
+<!-- Хорошо list example -->
 <ul>
   <li>London</li>
   <li>Paris</li>
@@ -688,8 +690,13 @@ CSS-файлы должны иметь расширение .css.
 
 Однако серверы могут быть настроены с несколькими именами файлов по умолчанию, и обычно вы можете установить столько имен файлов по умолчанию, сколько необходимо.
 
+## Источники
 https://google.github.io/styleguide/htmlcssguide.html
+
 https://codeguide.academy/html-css.html#html-doctype
+
 https://www.w3schools.com/html/html5_syntax.asp
+
 https://htmlhint.com/
+
 https://html.spec.whatwg.org/multipage/syntax.html#syntax-tag-omission
