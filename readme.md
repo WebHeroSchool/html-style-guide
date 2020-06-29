@@ -689,6 +689,13 @@ CSS-файлы должны иметь расширение .css.
 
 Однако серверы могут быть настроены с несколькими именами файлов по умолчанию, и обычно вы можете установить столько имен файлов по умолчанию, сколько необходимо.
 
+## Дополнительные ссылки
+[Самый первый сайт в мире](https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html)
+
+[HTMLHint - валидация HTML](https://htmlhint.com/)
+
+[Nu Html Checker - сервис для валидации HTML кода](https://validator.w3.org/nu/)
+
 ## Источники
 https://google.github.io/styleguide/htmlcssguide.html
 
@@ -696,6 +703,4 @@ https://codeguide.academy/html-css.html#html-doctype
 
 https://www.w3schools.com/html/html5_syntax.asp
 
-https://htmlhint.com/
-
-https://html.spec.whatwg.org/multipage/syntax.html#syntax-tag-omission
+https://html.spec.whatwg.org/multipage/syntax.html
